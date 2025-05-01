@@ -143,6 +143,7 @@ nav {
 
     .navTable {
         margin-top: 50px;
+        gap: 25px;
     }
 
     body {

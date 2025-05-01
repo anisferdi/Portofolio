@@ -13,7 +13,7 @@ const translations = {
         mareNostrum: "Book cover illustration for a personal project. Mix media",
         editorialNocheTitle: "It's nighttime",
         editorialNocheText: "Illustrations for a personal picture book project. Mixed media.",
-        musicDesc: "Spotify song covers. Digital technique",
+        musicDesc: "Spotify song cover arts. Digital technique",
         musicGata: "Cover Art Proposal",
         inkDesc: "Indian ink technique for INKTOBER Domestika. ",
         inkNoche: "Night",
@@ -43,7 +43,7 @@ const translations = {
     },
     fr: {
         aboutDescription: "Ana Isabel Fernández (Anisferdi) est actuellement étudiante en illustration.\
-         Depuis 2021, elle crée des reprises de chansons, mais son intérêt principal est l'illustration éditoriale,\
+         Depuis 2021, elle crée des couvertures d'ablums de musique, mais son intérêt principal est l'illustration éditoriale,\
           qui est actuellement au centre de ses projets",
         welcome: "Bienvenido",
         navAbout: "Contact",
@@ -88,7 +88,7 @@ function getCurrentLang() {
     } catch (e) {
         return 'es';
     }
-} 
+}
 
 const currentLang = getCurrentLang();
 console.log(currentLang);
@@ -108,6 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const button = switcher.querySelector('.languageButton');
         const dropdown = switcher.querySelector('.languageDropdown');
         const options = switcher.querySelectorAll('.languageOption');
+
+        const currentOption = switcher.querySelector(`.languageOption[data-lang="${currentLang}"]`);
+        if (currentOption) {
+            button.textContent = currentOption.textContent; 
+        }
 
         button.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -139,8 +144,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const fileStorage = {
-    'PortafolioES.pdf': 'Files/PortafolioES.pdf',
-
+    'PortfolioES.pdf': 'Files/PortfolioES.pdf',
+    'PortfolioEN.pdf': 'Files/PORTFOLIO_EN.pdf',
 };
 
 
@@ -153,7 +158,7 @@ function downloadFile(filename, displayName = filename) {
 
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = displayName; 
+    link.download = displayName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
