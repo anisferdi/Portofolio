@@ -60,6 +60,26 @@ const translations = {
         inkEspacio: "Espace",
         inkExtinto: "Éteint",
         inkCuervo: "Corbeau"
+    },
+    it: {
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) è attualmente una studentessa di illustrazione. \
+         Dal 2021 illustra coperetine di canzoni, ma il suo interesse principale è l'illustrazione editoriale,\
+          dove attualmente concentra i suoi progetti.",
+        welcome: "Bienvenido",
+        navAbout: "Contatto",
+        navInk: "Illustrazioni ad inchiostro",
+        navEditorial: "Illustrazione editoriale",
+        navMusic: "Illustrazione musicale",
+        mareNostrum: "illustrazione di una copertina per un progetto personale. Tecnica mista.",
+        editorialNocheTitle: "È notte",
+        editorialNocheText: "Illustrazioni per un progetto personale di un album illustrato. Tecnica mista.",
+        musicDesc: "Copertine per le canzioni di Spotify. Tecnica digitale.",
+        musicGata: "Proposta per la progettazione della copertina di un album musicale",
+        inkDesc: "Illustrazioni ad inchiostro cinese per il concorso INKTOBER Domestika ",
+        inkNoche: "Notte",
+        inkEspacio: "Spazio",
+        inkExtinto: "Estinto",
+        inkCuervo: "Corvo"
     }
 };
 
@@ -111,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const currentOption = switcher.querySelector(`.languageOption[data-lang="${currentLang}"]`);
         if (currentOption) {
-            button.textContent = currentOption.textContent; 
+            button.textContent = currentOption.textContent;
         }
 
         button.addEventListener('click', (e) => {

@@ -107,14 +107,14 @@ nav {
     display: none !important;
 }
 
-.topBannerContainer {
+.topHeaderContainer {
     align-items: center;
     display: flex;
     justify-content: center;
 
 }
 
-#topBanner {
+.topHeader {
 
     height: auto;
     width: 50%;
@@ -129,7 +129,7 @@ nav {
         height: 90px
     }
 
-    #topBanner {
+    .topHeader {
         height: auto;
         width: 100%;
         object-fit: fill;
