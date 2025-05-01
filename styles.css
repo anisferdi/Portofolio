@@ -5,6 +5,7 @@ body {
     background-color: #ffffff;
     color: black;
     font-size: 26px;
+    font-family: 'Montserrat';
     text-align: center;
 }
 
@@ -142,6 +143,10 @@ nav {
     .navTable {
         margin-top: 50px;
     }
+    body {
+        font-size: 18px;
+    
+    }
 }
 
 
@@ -209,6 +214,11 @@ nav {
     .image-item {
         flex: 1 1 100%;
 
+    }
+
+    .imageItemWide img {
+        width: 95%;
+        
     }
 }
 
