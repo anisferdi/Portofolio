@@ -166,6 +166,8 @@ document.addEventListener('DOMContentLoaded', function () {
 const fileStorage = {
     'PortfolioES.pdf': 'Files/PortfolioES.pdf',
     'PortfolioEN.pdf': 'Files/PORTFOLIO_EN.pdf',
+    'PortfolioFR.pdf': 'Files/PORTFOLIO_FR.pdf',
+    'PortfolioIT.pdf': 'Files/PORTFOLIO_IT.pdf'
 };
 
 
