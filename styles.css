@@ -212,6 +212,25 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.imageItemMedium {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 250px;
+    box-sizing: border-box;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageItemMedium img {
+    width: 65%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 @media (max-width: 800px) {
     .image-item {
