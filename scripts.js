@@ -6,7 +6,7 @@ const translations = {
         Since 2021, she has been creating song covers, but her main interest is editorial illustration, \
         which she is currently focusing on.",
         welcome: "Welcome",
-        navAbout: "Contact",
+        navAbout: "About me",
         navInk: "Ink",
         navEditorial: "Editorial",
         navMusic: "Music",
@@ -27,7 +27,7 @@ const translations = {
         Desde 2021 ha realizado portadas de canciones, pero su mayor interés es la ilustración editorial,\
          en la que está actualmente centrando sus proyectos.",
         welcome: "Bienvenido",
-        navAbout: "Contacto",
+        navAbout: "Sobre mí",
         navInk: "Tinta",
         navEditorial: "Editorial",
         navMusic: "Música",
@@ -48,7 +48,7 @@ const translations = {
          Depuis 2021, elle crée des couvertures d'ablums de musique, mais son intérêt principal est l'illustration éditoriale,\
           qui est actuellement au centre de ses projets",
         welcome: "Bienvenido",
-        navAbout: "Contact",
+        navAbout: "À propos",
         navInk: "Illustration à l'encre",
         navEditorial: "Illustration éditoriale",
         navMusic: "Illustration musicale",
@@ -68,7 +68,7 @@ const translations = {
          Dal 2021 illustra coperetine di canzoni, ma il suo interesse principale è l'illustrazione editoriale,\
           dove attualmente concentra i suoi progetti.",
         welcome: "Bienvenido",
-        navAbout: "Contatto",
+        navAbout: "Su di me",
         navInk: "Illustrazioni ad inchiostro",
         navEditorial: "Illustrazione editoriale",
         navMusic: "Illustrazione musicale",
