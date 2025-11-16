@@ -184,7 +184,18 @@ nav {
 .imageItem img {
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 80%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageItem video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     height: auto;
     display: block;
     object-fit: contain;
@@ -204,7 +215,7 @@ nav {
 }
 
 .imageItemWide img {
-    width: 75%;
+    width: 70%;
     height: auto;
     display: block;
     object-fit: contain;
