@@ -2,9 +2,7 @@
 // Translation dictionary 
 const translations = {
     en: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) is currently an illustration student. \
-        Since 2021, she has been creating song covers, but her main interest is editorial illustration, \
-        which she is currently focusing on.",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) is an illustration student in A Coruña, Spain. Although she previously studied and worked in another field, her interest in storytelling through art led her to pursue this profession.",
         welcome: "Welcome",
         navAbout: "About me",
         navInk: "Ink",
@@ -23,9 +21,7 @@ const translations = {
         inkCuervo: "Raven"
     },
     es: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) es actualmente estudiante de ilustración. \
-        Desde 2021 ha realizado portadas de canciones, pero su mayor interés es la ilustración editorial,\
-         en la que está actualmente centrando sus proyectos.",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) es estudiante de ilustración en A Coruña (España). Aunque anteriormente estudió y trabajó en otro ámbito, su interés por contar historias a través del arte la llevó a querer profundizar en esta profesión.",
         welcome: "Bienvenido",
         navAbout: "Sobre mí",
         navInk: "Tinta",
@@ -44,9 +40,7 @@ const translations = {
         inkCuervo: "Cuervo"
     },
     fr: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) est actuellement étudiante en illustration.\
-         Depuis 2021, elle crée des couvertures d'ablums de musique, mais son intérêt principal est l'illustration éditoriale,\
-          qui est actuellement au centre de ses projets",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) est étudiante en illustration à La Corogne (Espagne). Bien qu'elle ait auparavant étudié et travaillé dans un autre domaine, son intérêt pour la narration d'histoires à travers l'art l'a amenée à vouloir approfondir cette profession.",
         welcome: "Bienvenido",
         navAbout: "À propos",
         navInk: "Illustration à l'encre",
