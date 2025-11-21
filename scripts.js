@@ -2,7 +2,9 @@
 // Translation dictionary 
 const translations = {
     en: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) is an illustration student in A Coruña, Spain. Although she previously studied and worked in another field, her interest in storytelling through art led her to pursue this profession.",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) is an illustration student in A Coruña, Spain.\
+        Although she previously studied and worked in another field, her interest in storytelling through art\
+        led her to pursue this profession.",
         welcome: "Welcome",
         navAbout: "About me",
         navInk: "Ink",
@@ -11,7 +13,7 @@ const translations = {
         mareNostrum: "Book cover illustration for a personal project. Mix media",
         editorialNocheTitle: "It's nighttime",
         editorialNocheText: "Illustrations for a personal picture book project. Mixed media.",
-        editorialBoloniaText:"Collection of five illustrations about massive forest fires.",
+        editorialBoloniaText: "Collection of five illustrations about massive forest fires.",
         musicDesc: "Spotify song cover arts. Digital technique",
         musicGata: "Cover Art Proposal",
         inkDesc: "Indian ink technique for INKTOBER Domestika. ",
@@ -21,7 +23,9 @@ const translations = {
         inkCuervo: "Raven"
     },
     es: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) es estudiante de ilustración en A Coruña (España). Aunque anteriormente estudió y trabajó en otro ámbito, su interés por contar historias a través del arte la llevó a querer profundizar en esta profesión.",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) es estudiante de ilustración en A Coruña (España).\
+         Aunque anteriormente estudió y trabajó en otro ámbito, su interés por contar historias a través del arte\
+          la llevó a querer profundizar en esta profesión.",
         welcome: "Bienvenido",
         navAbout: "Sobre mí",
         navInk: "Tinta",
@@ -30,7 +34,7 @@ const translations = {
         mareNostrum: "Ilustración para portada de proyecto personal. Técnica mixta.",
         editorialNocheTitle: "Es de noche",
         editorialNocheText: "Ilustraciones para proyecto personal de álbum ilustrado. Técnica mixta.",
-        editorialBoloniaText:"Una colección de cinco ilustraciones sobre los incendios forestales masivos.",
+        editorialBoloniaText: "Una colección de cinco ilustraciones sobre los incendios forestales masivos.",
         musicDesc: "Portadas para canciones de Spotify. Técnica digital.",
         musicGata: "Propuesta de portada.",
         inkDesc: "Ilustraciones en tinta china para concurso INKTOBER Domestika. ",
@@ -40,7 +44,9 @@ const translations = {
         inkCuervo: "Cuervo"
     },
     fr: {
-        aboutDescription: "Ana Isabel Fernández (Anisferdi) est étudiante en illustration à La Corogne (Espagne). Bien qu'elle ait auparavant étudié et travaillé dans un autre domaine, son intérêt pour la narration d'histoires à travers l'art l'a amenée à vouloir approfondir cette profession.",
+        aboutDescription: "Ana Isabel Fernández (Anisferdi) est étudiante en illustration à La Corogne (Espagne).\
+         Bien qu'elle ait auparavant étudié et travaillé dans un autre domaine,\
+          son intérêt pour la narration d'histoires à travers l'art l'a amenée à vouloir approfondir cette profession.",
         welcome: "Bienvenido",
         navAbout: "À propos",
         navInk: "Illustration à l'encre",
