@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'SelectricScript'; 
+    src: url('Fonts/Selectric_Script.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
 body {
 
     min-height: 100vh;
@@ -5,7 +13,7 @@ body {
     background-color: #ffffff;
     color: black;
     font-size: 26px;
-    font-family: 'Montserrat';
+    font-family: 'SelectricScript','Montserrat';
     text-align: center;
 
 }
@@ -37,7 +45,7 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #e7f3ff;
+    background-color: #e7f3ff00;
     padding: 10px;
 }
 
@@ -54,7 +62,7 @@ nav {
 .navButton {
     flex: 1 1 calc(25% - 10px);
     background-color: #ffffff;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
@@ -73,8 +81,8 @@ nav {
     margin-top: 10px;
     font-size: 200%;
     transform: translate(-50%, -50%);
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     padding: 2px 2px;
     border-radius: 5px;
     opacity: 1;
@@ -184,12 +192,12 @@ nav {
 .imageItem img {
     margin-left: auto;
     margin-right: auto;
-    width: 78%;
+    width: 85%;
     height: auto;
     display: block;
     object-fit: contain;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -230,7 +238,7 @@ nav {
     display: block;
     object-fit: contain;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
 
@@ -292,7 +300,8 @@ a:active {
     top: 20px;
     right: 20px;
     z-index: 1000;
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight: bold;
+    
 }
 
 .languageButton {
@@ -301,6 +310,8 @@ a:active {
     padding: 8px 16px;
     cursor: pointer;
     font-size: 14px;
+    font-family: 'SelectricScript','Montserrat';
+    font-weight: bold;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease;
@@ -369,7 +380,8 @@ a:active {
 
 .text-column {
     flex: 1;
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
     padding: 20px;
 }
 
