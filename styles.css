@@ -125,11 +125,20 @@ nav {
 .topHeader {
 
     height: auto;
-    width: 50%;
+    width: 20%;
     object-fit: fill;
-    margin-bottom: 30px;
+
 }
 
+
+.topHeaderSignature {
+
+    height: auto;
+    width: 30%;
+    object-fit: fill;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
 
 @media (max-width: 840px) {
     .navButton {
@@ -152,6 +161,7 @@ nav {
     .navTable {
         margin-top: 50px;
         gap: 25px;
+        line-height: 0px;
     }
 
     body {
@@ -225,6 +235,7 @@ nav {
 .imageItemMedium {
     flex: 1 1 calc(50% - 10px);
     min-width: 250px;
+    margin-bottom: 40px;
     box-sizing: border-box;
     justify-items: center;
     display: flex;
@@ -233,6 +244,7 @@ nav {
 }
 
 .imageItemMedium img {
+    
     width: 65%;
     height: auto;
     display: block;

@@ -33,7 +33,7 @@ const translations = {
         mareNostrum: "Ilustración para portada de proyecto personal. Técnica mixta.",
         editorialNocheTitle: "Es de noche",
         editorialNocheText: "Ilustraciones para proyecto personal de álbum ilustrado. Técnica mixta.",
-        editorialBoloniaText: "Una colección de cinco ilustraciones.",
+        editorialBoloniaText: "Colección de cinco ilustraciones.",
         musicDesc: "Portadas para canciones de Spotify. Técnica digital.",
         musicGata: "Propuesta de portada.",
         inkDesc: "Ilustraciones en tinta china para concurso INKTOBER Domestika. ",
