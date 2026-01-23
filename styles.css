@@ -108,7 +108,7 @@ nav {
 .navDisplay {
     display: flex;
     flex-direction: column;
-
+    margin: 5px;
 }
 
 
@@ -144,7 +144,18 @@ nav {
 @media (max-width: 840px) {
     .navButton {
         flex: 1 1 calc(80% - 10px);
-        height: 90px
+        min-height: 90px;
+        height: auto;
+        
+        position: relative;
+    }
+
+
+    .overlay-text{
+        height: auto;
+        line-height:1.5;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
 
     .topHeader {
@@ -152,15 +163,16 @@ nav {
         width: 75%;
         object-fit: fill;
         margin-bottom: 10px;
-        margin-top: 10px;
-
+        margin-top: 20px;
+        
     }
+
     .topHeaderSignature {
 
     height: auto;
     width: 100%;
     object-fit: fill;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     margin-top: -20px;
     }
 
