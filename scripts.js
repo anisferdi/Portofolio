@@ -20,7 +20,9 @@ const translations = {
         inkNoche: "Night",
         inkEspacio: "Space",
         inkExtinto: "Extint",
-        inkCuervo: "Raven"
+        inkCuervo: "Raven",
+        buttonComics: "Comics",
+        buttonOthers: "Others"
     },
     es: {
         aboutDescription: "Anisferdi (Ana Isabel Fernández) es una ilustradora con formación previa en el ámbito de la salud.\
@@ -40,7 +42,9 @@ const translations = {
         inkNoche: "Noche",
         inkEspacio: "Espacio",
         inkExtinto: "Extinto",
-        inkCuervo: "Cuervo"
+        inkCuervo: "Cuervo",
+        buttonComics: "Comics",
+        buttonOthers: "Otros"
     },
     fr: {
         aboutDescription: "Anisferdi (Ana Isabel Fernández) est une illustratrice avec une formation dans le domaine de la santé.\
@@ -60,7 +64,9 @@ const translations = {
         inkNoche: "Nuit",
         inkEspacio: "Espace",
         inkExtinto: "Éteint",
-        inkCuervo: "Corbeau"
+        inkCuervo: "Corbeau",
+        buttonComics: "BD",
+        buttonOthers: "Autres"
     },
     it: {
         aboutDescription: "Anisferdi (Ana Isabel Fernández) è un'illustratrice con una formazione\
@@ -81,9 +87,30 @@ const translations = {
         inkNoche: "Notte",
         inkEspacio: "Spazio",
         inkExtinto: "Estinto",
-        inkCuervo: "Corvo"
+        inkCuervo: "Corvo",
+        buttonComics: "Fumetti",
+        buttonOthers: "Altri"
     }
 };
+
+
+
+const comicTags = document.querySelectorAll('.tagComic');
+const otherTags = document.querySelectorAll('.tagOther');
+
+
+
+function showComics() {
+    otherTags.forEach(section => section.classList.add('hidden'));
+    comicTags.forEach(section => section.classList.remove('hidden'));
+    console.log("Comis");
+}
+
+function showOthers() {
+    comicTags.forEach(section => section.classList.add('hidden'));
+    otherTags.forEach(section => section.classList.remove('hidden'));
+    console.log("Otros");
+}
 
 
 function switchLanguage(lang) {

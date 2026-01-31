@@ -54,10 +54,35 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
-
 }
 
+ .editorialButtonsContainer {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;  
+    align-items: center; 
+}
+
+.editorialButton {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    font-family: 'SelectricScript','Montserrat';
+    font-size: 30px;
+
+}
+.editorialButton:hover{
+    cursor: pointer;
+}
+
+
+.hidden{
+    display: none !important;
+}
 
 .navButton {
     flex: 1 1 calc(25% - 10px);
@@ -599,4 +624,22 @@ a:active {
 .it {
     font-style: italic;
     margin-bottom: 30px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    font-size: 15px;
+    justify-content: right;
+    align-items: right;
+    align-content: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer a{
+    color: #000 ; 
 }
