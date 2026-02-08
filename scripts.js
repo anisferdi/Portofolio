@@ -43,7 +43,7 @@ const translations = {
         inkEspacio: "Espacio",
         inkExtinto: "Extinto",
         inkCuervo: "Cuervo",
-        buttonComics: "Comics",
+        buttonComics: "Cómics",
         buttonOthers: "Otros"
     },
     fr: {
@@ -103,13 +103,13 @@ const otherTags = document.querySelectorAll('.tagOther');
 function showComics() {
     otherTags.forEach(section => section.classList.add('hidden'));
     comicTags.forEach(section => section.classList.remove('hidden'));
-    console.log("Comis");
+    // console.log("Comis");
 }
 
 function showOthers() {
     comicTags.forEach(section => section.classList.add('hidden'));
     otherTags.forEach(section => section.classList.remove('hidden'));
-    console.log("Otros");
+    // console.log("Otros");
 }
 
 
@@ -140,7 +140,7 @@ function getCurrentLang() {
 }
 
 const currentLang = getCurrentLang();
-console.log(currentLang);
+// console.log(currentLang);
 switchLanguage(currentLang);
 
 
@@ -225,3 +225,268 @@ document.querySelectorAll('.download-btn').forEach(button => {
 });
 
 
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const cardContainer1 = document.getElementById('cardContainer1');
+    const cardContainer2 = document.getElementById('cardContainer2');
+    const cardContainer3 = document.getElementById('cardContainer3');
+    const cardContainer4 = document.getElementById('cardContainer4');
+
+
+    const card1 = document.getElementById('card1');
+    const card2 = document.getElementById('card2');
+    const card3 = document.getElementById('card3');
+    const card4 = document.getElementById('card4');
+
+
+    const cardsContainer = document.querySelector('.cards-container');
+
+
+
+    let currentPage = 0;
+
+
+
+    document.getElementById('nextPage').addEventListener('click', flipNextPage);
+    document.getElementById('previousPage').addEventListener('click', flipPreviousPage);
+
+
+    function flipNextPage() {
+
+        if (window.matchMedia("(max-width: 1200px)").matches) {
+            flipNextPageMobile()
+        }
+        else {
+            flipNextPageDesktop()
+        }
+
+    }
+
+
+
+    function flipPreviousPage(){
+
+        if (window.matchMedia("(max-width: 1200px)").matches) {
+            flipPreviousPageMobile()
+        }
+        else {
+            flipPreviousPageDesktop()
+        }
+
+    }
+
+
+    function flipNextPageDesktop() {
+        switch (currentPage) {
+            case 0:
+                flipFirstPage();
+                currentPage += 1;
+
+                break;
+            case 1:
+                card2.classList.toggle('flipped')
+                cardContainer1.style.zIndex = '15';
+                cardContainer2.style.zIndex = '16';
+
+
+
+                currentPage += 1;
+                break;
+            case 2:
+                card3.classList.toggle('flipped')
+                cardContainer3.style.zIndex = '16';
+                currentPage += 1
+                break;
+            case 3:
+                flipLastPage();
+                cardContainer4.style.zIndex = '16';
+                currentPage += 1;
+                break;
+            case 4:
+
+                break;
+
+        }
+
+        // console.log(`Hice NExt ${currentPage} `);
+    }
+
+
+
+    function flipPreviousPageDesktop() {
+        switch (currentPage) {
+            case 0:
+                break;
+            case 1:
+                flipFirstPage();
+                cardContainer1.style.zIndex = '17';
+                currentPage -= 1;
+                break;
+            case 2:
+                card2.classList.toggle('flipped')
+                currentPage -= 1;
+                break;
+            case 3:
+                card3.classList.toggle('flipped')
+                setTimeout(() => {
+                    cardContainer3.style.zIndex = '15';
+                }, 800);
+
+                currentPage -= 1;
+                break;
+            case 4:
+                flipLastPage();
+                setTimeout(() => {
+                    cardContainer4.style.zIndex = '14';
+                }, 800);
+            
+                currentPage -= 1;
+                break;
+        }
+
+
+    }
+
+
+    function flipFirstPage() {
+        cardsContainer.classList.toggle('flippedFirstPage');
+
+        card1.classList.toggle('flippedFirstPage')
+
+
+    }
+
+
+    function flipLastPage() {
+        cardsContainer.classList.toggle('flippedLastPage');
+        card4.classList.toggle('flipped')
+
+
+    }
+
+
+
+    function flipNextPageMobile() {
+
+        switch (currentPage) {
+            case 0:
+                card1.classList.toggle('flippedFirstPage')
+                cardsContainer.classList.toggle('Right');
+                currentPage += 1;
+
+                break;
+
+            case 1:
+                cardsContainer.classList.toggle('Right');
+                // cardsContainer.classList.toggle('Left');
+                currentPage += 1;
+                break;
+
+            case 2:
+                card2.classList.toggle('flipped')
+                cardContainer1.style.zIndex = '15';
+                cardContainer2.style.zIndex = '16';
+                cardsContainer.classList.toggle('Right');
+                currentPage += 1;
+                break;
+
+            case 3:
+                cardsContainer.classList.toggle('Right');
+                // cardsContainer.classList.toggle('Left');
+                currentPage += 1;
+                break;
+
+            case 4:
+                card3.classList.toggle('flipped')
+                cardContainer3.style.zIndex = '16';
+                cardsContainer.classList.toggle('Right');
+                currentPage += 1
+                break;
+
+            case 5:
+                cardsContainer.classList.toggle('Right');
+                currentPage += 1;
+                break;
+
+            case 6:
+                flipLastPage();
+                cardContainer4.style.zIndex = '16';
+                cardsContainer.classList.toggle('Right');
+                currentPage += 1;
+                break;
+
+            case 7:
+
+                break;
+        }
+
+    }
+
+
+    function flipPreviousPageMobile() {
+
+        switch (currentPage) {
+            case 0:
+                break;
+
+            case 1:
+                card1.classList.toggle('flippedFirstPage')
+                cardContainer1.style.zIndex = '17';
+                cardsContainer.classList.toggle('Right');
+                currentPage -= 1;
+                break;
+
+            case 2:
+                cardsContainer.classList.toggle('Right');
+                currentPage -= 1;
+                break;
+
+            case 3:
+                card2.classList.toggle('flipped')
+                cardsContainer.classList.toggle('Right');
+                currentPage -= 1;
+                break;
+
+            case 4:
+                cardsContainer.classList.toggle('Right');
+                currentPage -= 1;
+                break;
+
+            case 5:
+                card3.classList.toggle('flipped')
+                cardsContainer.classList.toggle('Right');
+                setTimeout(() => {
+                    cardContainer3.style.zIndex = '15';
+                }, 800);
+                currentPage -= 1;
+                break;
+
+            case 6:
+                cardsContainer.classList.toggle('Right');
+                currentPage -= 1;
+                break;
+                
+            case 7:
+                flipLastPage();
+                cardsContainer.classList.toggle('Right');
+                setTimeout(() => {
+                    cardContainer4.style.zIndex = '14';
+                }, 800);
+            
+                currentPage -= 1;
+                break;
+        }
+
+    }
+
+
+
+});
